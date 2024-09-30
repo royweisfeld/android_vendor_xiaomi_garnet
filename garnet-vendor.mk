@@ -994,7 +994,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/garnet/proprietary/vendor/etc/thermal-cgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-cgame.conf \
     vendor/xiaomi/garnet/proprietary/vendor/etc/thermal-chg-only.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-chg-only.conf \
     vendor/xiaomi/garnet/proprietary/vendor/etc/thermal-class0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-class0.conf \
-    vendor/xiaomi/garnet/proprietary/vendor/etc/thermal-dolbyvision.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-dolbyvision.conf \
     vendor/xiaomi/garnet/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/xiaomi/garnet/proprietary/vendor/etc/thermal-hp-mgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-hp-mgame.conf \
     vendor/xiaomi/garnet/proprietary/vendor/etc/thermal-hp-normal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-hp-normal.conf \
@@ -2508,8 +2507,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/garnet/proprietary/vendor/lib64/libqwes.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqwes.so \
     vendor/xiaomi/garnet/proprietary/vendor/lib64/librcc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librcc.so \
     vendor/xiaomi/garnet/proprietary/vendor/lib64/librcmask.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librcmask.so \
-    vendor/xiaomi/garnet/proprietary/vendor/lib64/librelight_only.so.aa:$(TARGET_COPY_OUT_VENDOR)/lib64/librelight_only.so.aa \
-    vendor/xiaomi/garnet/proprietary/vendor/lib64/librelight_only.so.ab:$(TARGET_COPY_OUT_VENDOR)/lib64/librelight_only.so.ab \
     vendor/xiaomi/garnet/proprietary/vendor/lib64/libremosaic_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaic_wrapper.so \
     vendor/xiaomi/garnet/proprietary/vendor/lib64/libremosaiclib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaiclib.so \
     vendor/xiaomi/garnet/proprietary/vendor/lib64/libresampler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libresampler.so \
@@ -2809,8 +2806,8 @@ PRODUCT_PACKAGES += \
     MipayService \
     SoterService \
     TimeService \
-    com.qualcomm.qti.gpudrivers.pineapple.api34 \
     TrustZoneAccessService \
+    com.qualcomm.qti.gpudrivers.pineapple.api34 \
     uimgbaservice \
     EuiccGoogle \
     HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND \
@@ -2864,4 +2861,25 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.radio.ims \
     vendor.qti.hardware.servicetracker@1.2-service \
     vendor.qti.memory.pasrmanager@1.0-service \
-    vendor.xiaomi.hardware.quickcamera@1.0-service
+    vendor.xiaomi.hardware.quickcamera@1.0-service \
+    android.hardware.gnss-aidl-service-qti.xml \
+    android.hardware.gnss@2.1-service-qti.xml \
+    android.hardware.security.keymint-service-qti-rkp.xml \
+    c2_manifest_vendor.xml \
+    c2_manifest_vendor_audio.xml \
+    dataconnection-saidl.xml \
+    manifest_android.hardware.drm@1.4-service.widevine.xml \
+    manifest_vendor.xiaomi.hardware.mfidoca.xml \
+    manifest_vendor.xiaomi.hardware.mlipay.xml \
+    manifest_vendor.xiaomi.hardware.mtdservice.xml \
+    manifest_vendor.xiaomi.hardware.tidaservice.xml \
+    qtiradio-saidl.xml \
+    vendor.qti.diag.hal.service.xml \
+    vendor.qti.gnss-service.xml \
+    vendor.qti.hardware.limits-service.xml \
+    vendor.qti.hardware.perf.xml \
+    vendor.qti.hardware.power.powermodule.xml \
+    vendor.qti.hardware.radio.ims.xml \
+    vendor.qti.hardware.servicetracker@1.2-service.xml \
+    vendor.qti.memory.pasrmanager@1.0-service.xml \
+    vendor.xiaomi.hardware.quickcamera@1.0-service.xml
